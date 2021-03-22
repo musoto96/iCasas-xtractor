@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport', content='width=device-width, initial-scale=1.0'>
+      <meta http-equiv='X-UA-Compatible' content='ie-edge'>
+      <title>Extractor</title>
+   </head>
+   <body>
+      <h2>Extractor</h2>
+      <img src='images/hacker_meme.png' alt='meme' width='240', height='186'>
+      <div>
+         <p>1. Navegar a <a href="https://www.icasas.mx" target="_blank"> icasas.mx</a> y hacer una búsqueda <b>de Casas</b></p>
+         <p>&emsp; 1.1 Ir a <b>Filtros</b> y seleccionar <b>De Particulares</b> para quitar spam de compañías</p>
+         <p>2. Copiar link, por ejemplo: <i>https://www.icasas.mx/venta/habitacionales-casas-guanajuato-2_5_11_0_0_0/list</i></p>
+         <p>3. Pegarlo en esta página con el prefijo <b>/api/extract/</b> para que resulte como el siguiente:</br> &emsp;<i>http://xtractor.ddns.net<b>/api/extract/</b>https://www.icasas.mx/venta/habitacionales-casas-guanajuato-2_5_11_0_0_0/list</i></p>
+         
+         <p>4. <b>Esperar</b> a que se genere la descarga</p>
+         </br>
+         <p><b>Nota:</b> Únicamente extrae las casas en la página del link, por lo que si se necesitan mas datos se tiene que ir a la página 2, 3, etc. de la búsqueda en <b>icasas.mx</b> y repetir el procedimiento.</b>
+
+         <!--<input type="text" id="url" name="fname">
+         <a onClick='generarLink()' value="extraer" href="">Extraer</a>
+         <p id="link"></p>
+      </div>
+      <div>
+         <img src='images/portada.jpg' alt='muestra' width='150', height='200'>
+         -->
+      </div>
+      <script>
+         function generarLink() {
+                     const root = '/api/extract/';
+                     let url = document.getElementById("url").value;
+                     document.getElementById("link").innerHTML = root+url;
+                     return false;
+                  };
+      </script
+   </body>
+</html>
+
+
